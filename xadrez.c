@@ -44,11 +44,31 @@ int main() {
         printf("RAINHA: %d casas para a esquerda\n", rainha); //apresenta o movimento realizado e quantidade de casas movidas
 
     }
+
     
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+
+    int casas_baixo = 2; // dando lógica ao movimento de casas movidas
+    int casas_esquerda = 1; // dando lógica ao movimento de casas movidas
+
+    printf("\nCavalo:\n");
+
+    do
+    {
+        for (casas_baixo = 1; casas_baixo <=2; casas_baixo++) // o For ira definir quantos movimentos o cavalo ira fazer para baixo
+        {
+            printf("Baixo\n");
+        }
+
+        printf("Esquerda\n");
+        casas_esquerda--; // decrementando para que a condição se torne falsa e o loop se encerre
+        
+    } while (casas_esquerda > 0); //verifica se a condição e falsa e encerra o progama
+    
+    
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
